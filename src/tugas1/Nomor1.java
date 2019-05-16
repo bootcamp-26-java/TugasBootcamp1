@@ -63,12 +63,87 @@ public class Nomor1 {
 
         return hasilpem;
     }
+    /**
+    *
+    * @author erik
+    */
+     /**
+     * digunakan untuk melakukan perkalian sesuai dengan batas faktorial (b)
+     * return digunakan untuk mengembalikan nilai hasil ke dalam perkalian,sampai nilainya benar benar 0
+     * @param fak1
+     * @return 
+     */
+    public static int faktor(int fak1) {
+        int hasil =fak1;
+        for (int b=1;b<fak1;b++) {
+         hasil = (fak1-b) * hasil;
+        }    
+        return hasil;
+    }
+    
+    /**
+    *
+    * @author erik
+    */
+    
+    /**
+     * 
+     * @param x digunakan untuk melakukan penandaan berapa kali looping dilakukan 
+     * @param a angka yang digunakan untuk melakuka penjumlahan dengan hasil sesuai dari looping x
+     * @return  digunakan untuk mengembalikan nilai hasil ke dalam looping sampai looping habis
+     */
+    public static int kali(int x,int a) {
+   int hasil=0;
+    for (int c=1;c<=Math.abs(x);c++) {
+        if (x<0){
+            hasil=hasil-a;
+        }
+        else {
+        hasil=hasil+a;
+    }     
+    }
+    return hasil;
+}
+    
+     /**
+    *
+    * @author erik
+    */
+    
+    /**
+     * 
+     * @param atas digunakan untuk menjadi angka yang dilakukan perkalian looping 
+     * @param bawah digunakan untuk mencari batas dari looping yang dilakukan pada angka atas dengan 
+     * @return 
+     */
+    public static int permut(int atas, int bawah){
+        
+        int hasil=1;
+        for (int c=0;c<bawah;c++) {
+            hasil = (atas-c) *hasil;
+            /**
+             * int hasil digunakan untuk mendeklarasikan nilai hasil awal yaitu 1
+             * for digunakan untuk melakukan looping perkalian sesuai dengan banyaknya nilai faktorial
+             */
+        }
+        return hasil; 
+         /**
+         * digunakan untuk mengembalikan nilai dari hasil
+         */
+    }
 
     public static void main(String[] args) {
         Nomor1 fungsi = new Nomor1();
         System.out.println("Hasil Pemangkatan : " + fungsi.pangkat(5, 4));
         System.out.println("Hasil Pemangkatan : " + fungsi.pangkat(5, -4));
         System.out.println("Hasil Kombinasi : " + fungsi.kombinasi(5, 4));
+        System.out.println("Hasil Kombinasi : " + fungsi.kombinasi(5, 4));
+        System.out.println("Hasil Kombinasi : " + fungsi.faktor(8));
+        System.out.println("Hasil Kombinasi : " + fungsi.kali(5,4));
+        System.out.println("Hasil Kombinasi : " + fungsi.kali(-5,4));
+        System.out.println("Hasil Kombinasi : " + fungsi.kali(5,-4));
+        System.out.println("Hasil Kombinasi : " + fungsi.kali(-5,-4));
+        System.out.println("Hasil Kombinasi : " + fungsi.permut(5,4));
 
     }
 
