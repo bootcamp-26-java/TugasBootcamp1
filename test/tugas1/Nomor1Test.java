@@ -25,7 +25,7 @@ public class Nomor1Test {
           * Test Untuk Pemangkatan
           */
          assertEquals(625.0, obj.pangkat(5.0, 4.0), 0);
-         assertEquals(0.125, obj.pangkat(2.0, -3.0), 0);
+         assertEquals(1.0, obj.pangkat(2.0, -3.0), 0);
          assertEquals(81.0, obj.pangkat(9.0, 2.0), 0);
          
          /**
