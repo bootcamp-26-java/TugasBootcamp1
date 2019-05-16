@@ -32,6 +32,54 @@ public class Nomor1Test {
          assertEquals(35, obj.kombinasi(7, 3));
          assertEquals(84, obj.kombinasi(9, 3));
      }
+     
+     /**
+    *
+    * @author erik
+    */
+     
+     /**
+     * Test of Faktorial, of class Nomor1.
+     */
+     @Test
+    public void testFaktorial() {
+        assertEquals(40320, Nomor1.faktor(8));
+        assertEquals(6, Nomor1.faktor(3));
+        assertEquals(2, Nomor1.faktor(2));
+    }
+    
+    /**
+    *
+    * @author erik
+    */
+     
+     /**
+     * Test of Perkalian, of class Nomor1.
+     */
+    @Test
+    public void testPerkalian() {
+        assertEquals(20, Nomor1.kali(5,4));
+        assertEquals(-20, Nomor1.kali(-5,4));
+        assertEquals(-20, Nomor1.kali(5,-4));
+        assertEquals(20, Nomor1.kali(-5,-4));
+    }
+    /**
+    *
+    * @author erik
+    */
+     
+     /**
+     * Test of Permutasi, of class Nomor1.
+     */
+    @Test
+    public void testPermutasi() {
+        assertEquals(120, Nomor1.permut(5, 4));
+        assertEquals(60, Nomor1.permut(5, 3));
+        assertEquals(20, Nomor1.permut(5, 2));
+        assertEquals(5, Nomor1.permut(5, 1));
+    }    
+    
+    
     /**
      * Test of main method, of class Nomor1.
      */
