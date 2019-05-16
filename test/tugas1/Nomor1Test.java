@@ -47,9 +47,9 @@ public class Nomor1Test {
      */
      @Test
     public void testFaktorial() {
-        assertEquals(40320, Nomor1.faktor(8));
-        assertEquals(6, Nomor1.faktor(3));
-        assertEquals(2, Nomor1.faktor(2));
+        assertEquals(40320, Nomor1.faktorial(8));
+        assertEquals(6, Nomor1.faktorial(3));
+        assertEquals(2, Nomor1.faktorial(2));
     }
     
     /**
@@ -77,10 +77,10 @@ public class Nomor1Test {
      */
     @Test
     public void testPermutasi() {
-        assertEquals(120, Nomor1.permut(5, 4));
-        assertEquals(60, Nomor1.permut(5, 3));
-        assertEquals(20, Nomor1.permut(5, 2));
-        assertEquals(5, Nomor1.permut(5, 1));
+        assertEquals(120, Nomor1.permutasi(5, 4));
+        assertEquals(60, Nomor1.permutasi(5, 3));
+        assertEquals(20, Nomor1.permutasi(5, 2));
+        assertEquals(5, Nomor1.permutasi(5, 1));
     }    
     
     
