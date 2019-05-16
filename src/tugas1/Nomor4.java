@@ -1,5 +1,8 @@
 package tugas1;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 
 public class Nomor4 {
     /**
@@ -26,7 +29,29 @@ public class Nomor4 {
     
     public static void main(String[] args) {
         System.out.println(Pecah(176600)); //membuat masukan
+        /**
+     * author Erick
+     * Arraylist digunakan untuk menympan data array dimana jumlah array tidak terhingga/tidak mempunyai batas
+     * 
+     * 
+     */
+ArrayList<Integer> list = new ArrayList<Integer>();
+                
+  for(int i=0; i<=10; i++){
+      //populating the list
+       list.add(i);
+                }
 
+  // shuffling the list
+  System.out.println("---------------------------------------------------------------------");
+ Collections.shuffle(list);
+    System.out.println("10 angka random dari 1 sampai 10:\n--------------------------------");
+        for(int i=1; i<=10; i++){
+   //Printing 10 unique random number
+   System.out.print(list.get(i)+(i<=10?",":"selesai"));
+                }
+            }    
+    
     }
     
-}
+
