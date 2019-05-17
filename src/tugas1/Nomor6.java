@@ -1,7 +1,5 @@
 package tugas1;
-
 import java.util.*;
-
 public class Nomor6 {
 
     public static void main(String args[]) {
