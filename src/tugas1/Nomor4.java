@@ -29,7 +29,48 @@ public class Nomor4 {
         return result; //nilai kembalian
 
     }
+<<<<<<< HEAD
 
+=======
+        
+        
+    /**
+ *
+ * @author erik
+ */
+
+///*
+// * To change this license header, choose License Headers in Project Properties.
+// * To change this template file, choose Tools | Templates
+// * and open the template in the editor.
+// */
+//package randomnumber;
+//import java.util.Random;
+//
+///**
+// *
+// * @author erik
+// */
+//public class Nomor4 {
+//    public static long generateRandom(int p){
+//        Random Nomor4 = new Random();
+//        char[] digits =new char[p];
+//        digits[0] = (char) (Nomor4.nextInt(9) + '1');
+//        for (int i = 1; i < p; i++) {
+//        digits[i] = (char) (Nomor4.nextInt(10) + '0');
+//        
+//    }
+//        return Long.parseLong(new String(digits));
+//    }
+//    /**
+//     * @param args the command line arguments
+//     */
+//    
+//    public static void main(String[] args) {
+//        
+//        System.out.println(generateRandom(10));    
+    
+>>>>>>> origin/master
     public static void main(String[] args) {
         int[][] result = Pecah(377000);
         for (int i = 0; i < 10; i++) {

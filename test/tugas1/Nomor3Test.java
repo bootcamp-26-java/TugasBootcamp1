@@ -30,15 +30,13 @@ public class Nomor3Test {
     }
     
     
-    /*
-    Sindi
-    */
+    /*    Sindi    */
     @Test
     public void testFibo() {
         assertEquals(Arrays.asList(0, 1, 1, 2, 3, 5, 8),Nomor3.fibo(10));
         assertEquals(Arrays.asList(0, 1, 1, 2,3),Nomor3.fibo(4));
         assertEquals(Arrays.asList(0, 1, 1, 2, 3, 5),Nomor3.fibo(7));
-        assertEquals(Arrays.asList(0, 1, 1, 2, 3, 5, 8, 13),Nomor3.fibo(15));
+        assertEquals(Arrays.asList(0, 1, 1, 2, 3, 5, 8, 13),Nomor3.fibo(14));
     
 }
 }

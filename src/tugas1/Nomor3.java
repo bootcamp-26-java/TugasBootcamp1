@@ -22,12 +22,20 @@ public class Nomor3 {
         System.out.print(listPrima);
 
         System.out.println("\n");
+<<<<<<< HEAD
 
         int nilaimaksimal = 15;
         List<Integer> fibonacciList = fibo(nilaimaksimal);
         System.out.print("Deret Fibonacci sampai angka " + nilaimaksimal + " adalah ");
+=======
+        List<Integer> fibonacciList = fibo(9);
+        System.out.println("Deret Fibonacci");
+>>>>>>> origin/master
         System.out.println(fibonacciList);
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
     }
 
     /**
@@ -64,7 +72,11 @@ public class Nomor3 {
      * Mencetak deret Fibonacci dengan dari 0 sampai nilai yang mendekati
      * nilaimaksimal
      *
+<<<<<<< HEAD
      * @param nilaimaksimal Parameter yang digunakan untuk membatasi nilai
+=======
+     * @param nilaimaks Parameter yang digunakan untuk membatasi nilai
+>>>>>>> origin/master
      * deret. Merupakan parameter yang menentukan batas atas deret Fibonacci.
      * @return Pengembalian berupa list dari deret Fibonacci dari 0 sampai nilai
      * yang dekat dengan nilaimaksimal
@@ -72,6 +84,7 @@ public class Nomor3 {
     /*
     Sindi
      */
+<<<<<<< HEAD
     public static List<Integer> fibo(int nilaimaksimal) {
         List<Integer> fibonacciList = new ArrayList<>();
 
@@ -88,8 +101,26 @@ public class Nomor3 {
                 fibonacciList.add(bilangan3);
                 bilangan1 = bilangan2;
                 bilangan2 = bilangan3;
+=======
+    public static List<Integer> fibo(int nilaimaks) {
+        List<Integer> fList = new ArrayList<>();
+        int bil1 = 0, bil2 = 1, i = 2;
+        fList.add(bil1);
+        fList.add(bil2);
+        while (i <= nilaimaks) {
+            bil2 += bil1;
+            if (bil2 <= nilaimaks) {
+                fList.add(bil2);
+                bil1 = bil2 - bil1;
+>>>>>>> origin/master
             }
+            i++;
         }
+<<<<<<< HEAD
+=======
+        return fList;
+        
+>>>>>>> origin/master
     }
     return fibonacciList ;
 }

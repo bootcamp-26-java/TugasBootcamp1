@@ -3,82 +3,40 @@
  */
 package tugas1;
 
-/**
- * Class Nomor1 yang digunakan untuk membuat nilai kembali dengan dua variabel a
- * dan b untuk menentukan nilai kombinasi dan perpangkatan dengan nama fungsi
- * kombinasi dan pangkat.
- *
- * @author ARIF FRIDASARI
- */
 public class Nomor1 {
-
     /**
-     * Nomor1 kombinasi yang digunakan untuk mencari nilai kombinasi dari 2 buah
-     * nilai a dan b
-     *
-     * @param a
-     * @param b
-     * @return
+     * Kombinasi
+     * Create : Arif 
+     * Rumus : Kombinasi = Faktorial Batas Atas / Faktorial (Batas Atas - Batas Bawah) * Faktorial Batas Bawah
+     * Merupakan Method untuk menghitung Nilai Kombinasi dari dua buah inputan
+     * @param atas merupakan parameter input nilai awal dari kombinasi yang digunakan sebagai batas atas
+     * @param bawah merupakan parameter input nilai awal dari kombinasi yang digunakan sebagai batas bawah 
+     * @return 
      */
     public int kombinasi(int atas, int bawah) {
         return faktorial(atas) / (faktorial((atas) - (bawah)) * faktorial(bawah));
-
-//        int awal = 1;
-//        int btsbwh = 1;
-//        int bts = 1;
-//        for (int f = a; f >= 1; f--) {
-//            awal *= f;
-//        }
-//        int bwh = (a - b);
-//        for (int h = bwh; h >= 1; h--) {
-//            btsbwh *= h;
-//        }
-//        for (int j = b; j >= 1; j--) {
-//            bts *= j;
-//        }
-//        int hasilkom = (awal / (btsbwh * bts));
-//        return hasilkom;
     }
 
     /**
-     * Nomor1 pangkat untuk menghitung nilai pangkat dari nilai a dan nilai
-     * pangkatnya b
-     *
-     * @param a
-     * @param b
-     * @return
-     * @ARIF FRIDASARI
+     * Pemangkatan
+     * Create : Arif 
+     * Rumus : Pemangkatan = Nilai base ^ Nilai atas
+     * Merupakan Method untuk menghitung Pemangkatan dengan inputan bilangan double base dan atas
+     * @param base merupakan parameter inputan yang digunakan sebagai nilai awal atau nilai yang akan dipangkatkan
+     * @param atas merupakan parameter inputan yang digunakan sebagai pangkat.
+     * @return 
      */
-    public double pangkat(double a, double b) {
+    public double pangkat(double base, double atas) {
         double hasilpem = 1;
         double z = 1;
-        while (z <= b) {
-//            if (b > 0) {
-//                hasilpem *= a;
-//            } else {
-//                hasilpem /= a;
-//            }
-            hasilpem=(b > 0) ? hasilpem * a : hasilpem / a;
-
+        while (z <= atas) {
+            hasilpem=(atas > 0) ? hasilpem * base : hasilpem / base;
             z++;
         }
-
-//        String nama = (true)?"dave":"lain";
-        
-        
-//        if (b > 0) {
-//            while (z <= b) {
-//                hasilpem = hasilpem * a;
-//                z++;
-//            }
-//        } else {
-//            while (z <= Math.abs(b)) {
-//                hasilpem = hasilpem / a;
-//                z++;
-//            }
-//        }
         return hasilpem;
     }
+    
+    
 
     /**
      *
