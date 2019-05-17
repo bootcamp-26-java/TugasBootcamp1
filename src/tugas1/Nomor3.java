@@ -60,6 +60,10 @@ public class Nomor3 {
     /**
      * Mencetak deret Fibonacci dengan dari 0 sampai nilai yang mendekati
      * nilaimaksimal
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> origin/master
      * @param nilaimaks Parameter yang digunakan untuk membatasi nilai
      * deret. Merupakan parameter yang menentukan batas atas deret Fibonacci.
      * @return Pengembalian berupa list dari deret Fibonacci dari 0 sampai nilai

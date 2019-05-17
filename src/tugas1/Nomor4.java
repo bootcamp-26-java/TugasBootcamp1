@@ -29,10 +29,6 @@ public class Nomor4 {
         return result; //nilai kembalian
 
     }
-/**
- *
- * @author erik
- */
 
 ///*
 // * To change this license header, choose License Headers in Project Properties.
