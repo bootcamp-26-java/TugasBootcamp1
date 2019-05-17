@@ -1,6 +1,7 @@
 package tugas1;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Collections;
 
 public class Nomor4 {
@@ -30,6 +31,27 @@ public class Nomor4 {
 
     }
 
+    ///**
+    // *
+    // * @author erik
+    // */
+    /**
+     *
+     * @param limit berfungsi untuk menentukan jumlah maksimal dari variabel
+     * limit yang nantinya dilakukan looping untuk mengisi arraylist
+     * @return digunakan untuk mengembalikan nilai looping ke dalam arraylist
+     * list
+     */
+    public static ArrayList<Integer> prima(int limit) {
+        // create array list object       
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i = 1; i <= limit; i++) {
+            //populating the list
+            list.add(i);
+        }
+        Collections.shuffle(list);
+        return list;
+    }
 ///*
 // * To change this license header, choose License Headers in Project Properties.
 // * To change this template file, choose Tools | Templates
@@ -38,58 +60,22 @@ public class Nomor4 {
 //package randomnumber;
 //import java.util.Random;
 //
-///**
-// *
-// * @author erik
-// */
-//public class Nomor4 {
-//    public static long generateRandom(int p){
-//        Random Nomor4 = new Random();
-//        char[] digits =new char[p];
-//        digits[0] = (char) (Nomor4.nextInt(9) + '1');
-//        for (int i = 1; i < p; i++) {
-//        digits[i] = (char) (Nomor4.nextInt(10) + '0');
-//        
-//    }
-//        return Long.parseLong(new String(digits));
-//    }
-//    /**
-//     * @param args the command line arguments
-//     */
-//    
-//    public static void main(String[] args) {
-//        
-//        System.out.println(generateRandom(10));    
-    
 
     public static void main(String[] args) {
         int[][] result = Pecah(377000);
         for (int i = 0; i < 10; i++) {
             System.out.println("Uang Pecahan " + result[0][i] + " sebanyak " + result[1][i] + " lembar"); //menampilkan hasil
         }
+        System.out.println(Pecah(176600)); //membuat masukan
 
-//        System.out.println(Pecah(176600)); //membuat masukan
-        /**
-         * author Erick Arraylist digunakan untuk menympan data array dimana
-         * jumlah array tidak terhingga/tidak mempunyai batas
-         *
-         *
-         */
-        ArrayList<Integer> list = new ArrayList<Integer>();
-
-        for (int i = 0; i <= 10; i++) {
-            //populating the list
-            list.add(i);
-        }
-
-        // shuffling the list
-        System.out.println("---------------------------------------------------------------------");
-        Collections.shuffle(list);
-        System.out.println("10 angka random dari 1 sampai 10:\n--------------------------------");
-        for (int i = 1; i <= 10; i++) {
-            //Printing 10 unique random number
-            System.out.print(list.get(i) + (i <= 10 ? "," : "selesai"));
-        }
+        Nomor4 nomor4 = new Nomor4();
+        //Printing 10 unique random number
+        System.out.print(nomor4.prima(10));
     }
-
 }
+/**
+ * author Erick Arraylist digunakan untuk menympan data array dimana jumlah
+ * array tidak terhingga/tidak mempunyai batas
+ *
+ *
+ */
