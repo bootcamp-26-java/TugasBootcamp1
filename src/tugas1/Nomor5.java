@@ -35,3 +35,4 @@ public class Nomor5 {
         return dec;
     }
 }
+//nkjn
