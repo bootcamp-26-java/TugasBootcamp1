@@ -1,7 +1,7 @@
 package tugas1;
 /**
  * Class ini menkonversikan desimal dari/ke biner, hexa, octal
- * @author ASUS
+ * @author Gede
  */
 public class Nomor2 {
 
