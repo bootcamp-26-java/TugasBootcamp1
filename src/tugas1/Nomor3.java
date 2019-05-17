@@ -22,12 +22,9 @@ public class Nomor3 {
         System.out.print(listPrima);
 
         System.out.println("\n");
-
-        int nilaimaksimal=15;
-        List<Integer> fibonacciList = fibo(nilaimaksimal);
-        System.out.print("Deret Fibonacci sampai angka "+nilaimaksimal +" adalah ");
+        List<Integer> fibonacciList = fibo(9);
+        System.out.println("Deret Fibonacci");
         System.out.println(fibonacciList);
-        
     }
 
     /**
@@ -61,49 +58,30 @@ public class Nomor3 {
     }
 
     /**
-     * Mencetak deret Fibonacci dengan dari 0 sampai nilai yang mendekati 
+     * Mencetak deret Fibonacci dengan dari 0 sampai nilai yang mendekati
      * nilaimaksimal
-     * @param nilaimaksimal Parameter yang digunakan untuk membatasi nilai deret. 
-     * Merupakan parameter yang menentukan batas atas deret Fibonacci.
-     * @return Pengembalian berupa list dari deret Fibonacci dari 0 sampai nilai 
+     *
+     * @param nilaimaks Parameter yang digunakan untuk membatasi nilai
+     * deret. Merupakan parameter yang menentukan batas atas deret Fibonacci.
+     * @return Pengembalian berupa list dari deret Fibonacci dari 0 sampai nilai
      * yang dekat dengan nilaimaksimal
      */
     /*
     Sindi
-    */
-    public static List<Integer> fibo(int nilaimaksimal) {
-        List<Integer> fibonacciList = new ArrayList<>();
-
-        int bilangan1 = 0;
-        int bilangan2 = 1;
-        int bilangan3 = 0;
-
-        if (nilaimaksimal == 0) {} 
-        else if (nilaimaksimal == 1) {
-            fibonacciList.add(bilangan1);
-            fibonacciList.add(bilangan2);
-            fibonacciList.add(bilangan2);
-        } 
-        else if (nilaimaksimal == 2) {
-            fibonacciList.add(bilangan1);
-            fibonacciList.add(bilangan2);
-            fibonacciList.add(bilangan2);
-            bilangan3 = bilangan2+bilangan2;
-            fibonacciList.add(bilangan3);
-        } 
-        else {
-            fibonacciList.add(bilangan1);
-            fibonacciList.add(bilangan2);
-
-            for (int i = 2; i < 100; i++) {
-                bilangan3 = bilangan2 + bilangan1;
-                if (bilangan3 <= nilaimaksimal) {
-                    fibonacciList.add(bilangan3);
-                    bilangan1 = bilangan2;
-                    bilangan2 = bilangan3;
-                }
+     */
+    public static List<Integer> fibo(int nilaimaks) {
+        List<Integer> fList = new ArrayList<>();
+        int bil1 = 0, bil2 = 1, i = 2;
+        fList.add(bil1);
+        fList.add(bil2);
+        while (i <= nilaimaks) {
+            bil2 += bil1;
+            if (bil2 <= nilaimaks) {
+                fList.add(bil2);
+                bil1 = bil2 - bil1;
             }
+            i++;
         }
-        return fibonacciList;
+        return fList;
     }
 }

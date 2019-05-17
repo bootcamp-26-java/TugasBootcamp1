@@ -30,9 +30,7 @@ public class Nomor3Test {
     }
     
     
-    /*
-    Sindi
-    */
+    /*    Sindi    */
     @Test
     public void testFibo() {
         assertEquals(Arrays.asList(0, 1, 1, 2, 3, 5, 8),Nomor3.fibo(10));
