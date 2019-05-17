@@ -23,6 +23,14 @@ public class Nomor4Test {
         assertSame(Pecahan, Pecahan);
       
     }
+    
+    @Test
+    public void testSomeMethod() {
+        Nomor4 randomNumber = new Nomor4();
+        Object array = randomNumber.toString();
+        assertEquals(randomNumber, randomNumber);
+        assertSame(randomNumber, randomNumber);
+    }
 
     /**
      * Test of main method, of class Nomor4.
