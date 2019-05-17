@@ -30,8 +30,11 @@ public class Nomor4 {
 
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> origin/master
         
         
     /**

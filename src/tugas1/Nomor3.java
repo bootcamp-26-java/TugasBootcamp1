@@ -23,6 +23,7 @@ public class Nomor3 {
 
         System.out.println("\n");
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         int nilaimaksimal = 15;
         List<Integer> fibonacciList = fibo(nilaimaksimal);
@@ -31,9 +32,16 @@ public class Nomor3 {
         List<Integer> fibonacciList = fibo(9);
         System.out.println("Deret Fibonacci");
 >>>>>>> origin/master
+=======
+        List<Integer> fibonacciList = fibo(9);
+        System.out.println("Deret Fibonacci");
+>>>>>>> origin/master
         System.out.println(fibonacciList);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
     }
@@ -73,7 +81,11 @@ public class Nomor3 {
      * nilaimaksimal
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param nilaimaksimal Parameter yang digunakan untuk membatasi nilai
+=======
+     * @param nilaimaks Parameter yang digunakan untuk membatasi nilai
+>>>>>>> origin/master
 =======
      * @param nilaimaks Parameter yang digunakan untuk membatasi nilai
 >>>>>>> origin/master
@@ -84,6 +96,7 @@ public class Nomor3 {
     /*
     Sindi
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     public static List<Integer> fibo(int nilaimaksimal) {
         List<Integer> fibonacciList = new ArrayList<>();
@@ -113,10 +126,27 @@ public class Nomor3 {
                 fList.add(bil2);
                 bil1 = bil2 - bil1;
 >>>>>>> origin/master
+=======
+    public static List<Integer> fibo(int nilaimaks) {
+        List<Integer> fList = new ArrayList<>();
+        int bil1 = 0, bil2 = 1, i = 2;
+        fList.add(bil1);
+        fList.add(bil2);
+        while (i <= nilaimaks) {
+            bil2 += bil1;
+            if (bil2 <= nilaimaks) {
+                fList.add(bil2);
+                bil1 = bil2 - bil1;
+>>>>>>> origin/master
             }
             i++;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        return fList;
+        
+>>>>>>> origin/master
 =======
         return fList;
         
