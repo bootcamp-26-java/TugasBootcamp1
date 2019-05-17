@@ -9,11 +9,11 @@ public class Nomor2 {
 
     public static void main(String[] args) {
         Nomor2 fungsi = new Nomor2();
-        System.out.println("Fungsi konversi ke biner : " + fungsi.DecimaltoBinary(100));
-        System.out.println("Fungsi konversi ke Hexa : " + fungsi.DecimaltoHexa(150));
-        System.out.println("Fungsi konversi ke oktal : " + fungsi.DecimaltoOctal(31));
+        System.out.println("Fungsi konversi ke biner : " + fungsi.DecimaltoBinary(12));
+        System.out.println("Fungsi konversi ke Hexa : " + fungsi.DecimaltoHexa(30));
+        System.out.println("Fungsi konversi ke oktal : " + fungsi.DecimaltoOctal(23));
         System.out.println("Fungsi konversi dari biner : " + fungsi.BinerToDecimal(1));
-        System.out.println("Fungsi konversi dari Hexa : " + fungsi.HexaToDecimal("9E"));
+        System.out.println("Fungsi konversi dari Hexa : " + fungsi.HexaToDecimal("1A"));
         System.out.println("Fungsi konversi dari oktal : " + fungsi.OctalToDecimal(37));
 
     }
@@ -23,10 +23,13 @@ public class Nomor2 {
      * menyimpan String return kembalian nilai
      *
      * @param decimal
-     * @return By Gede
+     * @return 
      */
     public String DecimaltoBinary(int decimal) {
         String hasil = "";
+        if(decimal==0){
+            return "0";
+        }
         while (decimal > 0) {
             hasil = decimal % 2 + hasil;
             decimal = decimal / 2;
