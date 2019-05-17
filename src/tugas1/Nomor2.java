@@ -11,10 +11,10 @@ public class Nomor2 {
         Nomor2 fungsi = new Nomor2();
         System.out.println("Fungsi konversi ke biner : " + fungsi.DecimaltoBinary(12));
         System.out.println("Fungsi konversi ke Hexa : " + fungsi.DecimaltoHexa(30));
-        System.out.println("Fungsi konversi ke oktal : " + fungsi.DecimaltoOctal(23));
-        System.out.println("Fungsi konversi dari biner : " + fungsi.BinerToDecimal(1));
+        System.out.println("Fungsi konversi ke oktal : " + fungsi.DecimaltoOctal(31));
+        System.out.println("Fungsi konversi dari biner : " + fungsi.BinerToDecimal("1"));
         System.out.println("Fungsi konversi dari Hexa : " + fungsi.HexaToDecimal("1A"));
-        System.out.println("Fungsi konversi dari oktal : " + fungsi.OctalToDecimal(37));
+        System.out.println("Fungsi konversi dari oktal : " + fungsi.OctalToDecimal("37"));
 
     }
 
@@ -92,32 +92,37 @@ public class Nomor2 {
 
     /**
      * Method untuk merubah bilangan biner ke desimal
-     *
      * @param biner bilangan biner yang ingin dirubah ke desimal
      * @return nilai kembalian dari biner ke desimal dengan tipe data berupa
      * integer
      */
-    public int BinerToDecimal(int biner) {
+    public int BinerToDecimal(String biner) {
         int pangkat = 0;
         int desimal = 0;
         int temp;
-        while (true) {
-            if (biner == 0) {
-                break;
-            } else {
-                temp = biner % 10;
-                desimal += temp * calcPow(2, pangkat);
-                //desimal += temp * pangkat^2;
-                biner = biner / 10;
-                pangkat++;
+        boolean number = biner.matches("-?\\d+(\\.\\d+)?");
+        if (number) {
+            int binerInt = Integer.parseInt(biner);
+            while (true) {
+                if (binerInt == 0) {
+                    break;
+                } else {
+                    temp = binerInt % 10;
+                    desimal += temp * calcPow(2, pangkat);
+                    //desimal += temp * pangkat^2;
+                    binerInt = binerInt / 10;
+                    pangkat++;
+                }
             }
+        } else {
+            return 0;
         }
+        
         return desimal;
     }
 
     /**
      * Method untuk merubah bilangan hexadesimal ke desimal
-     *
      * @param hexa bilangan hexadesimal yang ingin dirubah ke desimal
      * @return nilai kembalian dari hexadesimal ke desimal dengan tipe data
      * berupa integer
@@ -138,23 +143,28 @@ public class Nomor2 {
 
     /**
      * Method untuk merubah bilangan oktal ke desimal
-     *
      * @param oktal bilangan oktal yang ingin dirubah ke desimal
      * @return nilai kembalian dari oktal ke desimal dengan tipe data integer
      */
-    public int OctalToDecimal(int oktal) {
-
+    public int OctalToDecimal(String oktal) {
+        
         int desimal = 0;
         int i = 0;
         int tmp;
-
-        while (oktal != 0) {
-            tmp = oktal % 10;
-            //desimal += tmp * Math.pow(8, i);
-            desimal += tmp * calcPow(8, i);
-            oktal = oktal / 10;
-            i++;
+        boolean number = oktal.matches("-?\\d+(\\.\\d+)?");
+        if (number) {
+            int oktalInt = Integer.parseInt(oktal);
+            while (oktalInt != 0) {
+                tmp = oktalInt % 10;
+                //desimal += tmp * Math.pow(8, i);
+                desimal += tmp * calcPow(8, i);
+                oktalInt = oktalInt / 10;
+                i++;
+            }
+        } else {
+            return 0;
         }
+   
         return desimal;
     }
 

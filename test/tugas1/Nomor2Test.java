@@ -32,8 +32,8 @@ public class Nomor2Test {
     }
     @Test
     public void testBinarytoDecimal() {
-        assertEquals(1, coba.BinerToDecimal(1));
-        assertEquals(8, coba.BinerToDecimal(1000));
+        assertEquals(1, coba.BinerToDecimal("1"));
+        assertEquals(8, coba.BinerToDecimal("1000"));
     }
     @Test
     public void testHexatoDecimal() {
@@ -43,9 +43,9 @@ public class Nomor2Test {
     }
     @Test
     public void testOctaltoDecimal() {
-        assertEquals(31, coba.OctalToDecimal(37));
-        assertEquals(512, coba.OctalToDecimal(1000));
-        assertEquals(1, coba.OctalToDecimal(-1));
+        assertEquals(31, coba.OctalToDecimal("37"));
+        assertEquals(512, coba.OctalToDecimal("1000"));
+        assertEquals(1, coba.OctalToDecimal("-1"));
     }
     
 }
