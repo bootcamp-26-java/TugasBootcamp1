@@ -6,10 +6,6 @@
 package tugas1;
 
 import java.util.Arrays;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -17,9 +13,9 @@ import static org.junit.Assert.*;
  *
  * @author Sekar Ayu Safitri
  */
-public class NomorTestTiga {
+public class Nomor3Test {
     
-    public NomorTestTiga() {
+    public Nomor3Test() {
     }
 
     // TODO add test methods here.
@@ -30,6 +26,15 @@ public class NomorTestTiga {
     
      @Test
     public void isPrima(){
-         assertEquals(Arrays.asList(2, 3, 5, 7), NomorTiga.prima(10));
+         assertEquals(Arrays.asList(2, 3, 5, 7), Nomor3.prima(10));
     }
+    
+    @Test
+    public void testFibo() {
+        assertEquals(Arrays.asList(0, 1, 1, 2, 3, 5, 8),Nomor3.fibo(10));
+        assertEquals(Arrays.asList(0, 1, 1, 2,3),Nomor3.fibo(4));
+        assertEquals(Arrays.asList(0, 1, 1, 2, 3, 5),Nomor3.fibo(7));
+        assertEquals(Arrays.asList(0, 1, 1, 2, 3, 5, 8, 13),Nomor3.fibo(15));
+    
+}
 }

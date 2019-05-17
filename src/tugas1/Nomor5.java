@@ -6,14 +6,6 @@ package tugas1;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Class Decrement merupakan class untuk fungsi auto decrement / pengurangan
- * nilai dari variabel a dan b variabel a adalah batas minimum / nilai akhir
- * dari pengurangan / decrement variabel b adalah nilai awal / batas atas akhir
- * dari decrement
- *
- * @author Arif Fridasari
- */
 public class Nomor5 {
 
     public static void main(String[] args) {
@@ -22,16 +14,18 @@ public class Nomor5 {
         for (String string : inc) {
             System.out.println(string + ", ");
         }
-        
+
         System.out.println("Auto Decrement");
-        
+
         List<String> dec = decrement(3, 15);
-//        System.out.println(dec);
         for (String string : dec) {
             System.out.print(string + ", ");
         }
     }
 
+    /**
+     * Sindi
+     */
     /**
      * Auto increment dari nilai minimumA sampai dengan nilai maksimumB dengan
      * menambahkan left padding "0" sebanyak digit dari maksimumB sehingga semua
@@ -44,7 +38,6 @@ public class Nomor5 {
      * @return Pengembalian berupa list nilai increment dari minimumA sampai
      * maksimumB
      */
-    // Sindi
     public static List<String> increment(int minimumA, int maksimumB) {
         List<String> inc = new ArrayList<>();
         for (int i = minimumA; i <= maksimumB; i++) {
@@ -56,8 +49,22 @@ public class Nomor5 {
         }
         return inc;
     }
-    
-    //Arif
+
+
+    /**
+     * Arif
+     * 
+     * Class Decrement merupakan class untuk fungsi auto decrement / pengurangan
+     * nilai dari variabel a dan b variabel a adalah batas minimum / nilai akhir
+     * dari pengurangan / decrement variabel b adalah nilai awal / batas atas
+     * akhir dari decrement
+     *
+     * @author Arif Fridasari
+     *
+     * @param  integer a
+     * @param  integer b
+     * @return
+     */
     public static List<String> decrement(int a, int b) {
         List<String> dec = new ArrayList<>();
         for (int i = b; i >= a; i--) {
@@ -70,4 +77,3 @@ public class Nomor5 {
         return dec;
     }
 }
-//nkjn
