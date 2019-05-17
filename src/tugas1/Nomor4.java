@@ -1,16 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tugas1;
 
-/**
- *
- * @author WINDOWS 10
- */
 public class Nomor4 {
     /**
+     * author Dan!
      * Method Pecah digunakan untuk menentukan pecahan uang berdasarkan nominal
      * @param uang merupakan nilai inputan
      * @return nilai kembalian dari method Pecah merupakan sisa berupa angka
