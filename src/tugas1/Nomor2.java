@@ -7,12 +7,12 @@ public class Nomor2 {
 
     public static void main(String[] args) {
         Nomor2 fungsi = new Nomor2();
-        System.out.println(fungsi.DecimaltoBinary(100));
-        System.out.println(fungsi.DecimaltoHexa(150));
-        System.out.println(fungsi.DecimaltoOctal(31));
-        System.out.println(fungsi.BinerToDecimal(1));
-        System.out.println(fungsi.HexaToDecimal("9E"));
-        System.out.println(fungsi.OctalToDecimal(37));
+        System.out.println("Fungsi konversi ke biner : " + fungsi.DecimaltoBinary(100));
+        System.out.println("Fungsi konversi ke Hexa : " + fungsi.DecimaltoHexa(150));
+        System.out.println("Fungsi konversi ke oktal : " + fungsi.DecimaltoOctal(31));
+        System.out.println("Fungsi konversi dari biner : " + fungsi.BinerToDecimal(1));
+        System.out.println("Fungsi konversi dari Hexa : " + fungsi.HexaToDecimal("9E"));
+        System.out.println("Fungsi konversi dari oktal : " + fungsi.OctalToDecimal(37));
 
     }
     /**
@@ -67,10 +67,10 @@ public class Nomor2 {
     }
     
     /**
-     * Untuk membantu memangkatkan
-     * @param n
-     * @param power
-     * @return 
+     * Method untuk perpangkatan
+     * @param n merupakan bilangan pokok yang akan di pangkatkan
+     * @param power  merupakan bilangan eksponen yang menentukan berapa kali pangkat yang diinginkan 
+     * @return nilai yang dikembalikan adalah nilai n dikalikan sebanyak perulangan nilai power yang dimasukan
      */
      public int calcPow(int n, int power){
         int result = 1;
@@ -80,11 +80,11 @@ public class Nomor2 {
         return result;
     }
      
-     /**
-      * Untuk Konversi Bilangan Biner ke Desimal
-      * @param biner
-      * @return 
-      */
+    /**
+     * Method untuk merubah bilangan biner ke desimal
+     * @param biner bilangan biner yang ingin dirubah ke desimal
+     * @return nilai kembalian dari biner ke desimal dengan tipe data berupa integer
+     */
      public int BinerToDecimal(int biner){
        int pangkat = 0;
        int desimal = 0;
@@ -103,11 +103,11 @@ public class Nomor2 {
        return desimal;
    }
     
-     /**
-      * Untuk Konversi dari Bilangan Hexadesimal ke Desimal
-      * @param hexa
-      * @return 
-      */
+    /**
+     * Method untuk merubah bilangan hexadesimal ke desimal
+     * @param hexa bilangan hexadesimal yang ingin dirubah ke desimal
+     * @return nilai kembalian dari hexadesimal ke desimal dengan tipe data berupa integer
+     */
     public int HexaToDecimal(String hexa){
        String digits = "0123456789ABCDEF";
        hexa = hexa.toUpperCase();
@@ -123,9 +123,9 @@ public class Nomor2 {
    }
     
     /**
-     * Untuk Konversi dari Bilangan Octal ke bilangan desimal
-     * @param oktal
-     * @return 
+     * Method untuk merubah bilangan oktal ke desimal
+     * @param oktal bilangan oktal yang ingin dirubah ke desimal
+     * @return nilai kembalian dari oktal ke desimal dengan tipe data integer
      */
     public int OctalToDecimal(int oktal){
        
