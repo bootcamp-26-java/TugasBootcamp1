@@ -42,9 +42,15 @@ public class Nomor5Test {
 
     /**
      * Test of decrement method, of class Nomor5.
+     * Arif fridasari
      */
     @Test
     public void testDecrement() {
+         assertEquals(Arrays.asList("15","14","13","12","11","10","09","08","07"),Nomor5.decrement(7,15));
+         assertEquals(Arrays.asList("20","19","18","17","16","15"),Nomor5.decrement(15,20));
+         assertEquals(Arrays.asList("21","20","19","18","17","16","15","14","13","12","11","10"),Nomor5.decrement(10,21));
+         assertEquals(Arrays.asList("20","19","18","17","16","15"),Nomor5.decrement(15,20));
+         assertEquals(Arrays.asList("9","8","7","6"),Nomor5.decrement(6,9));
     }
     
 }
