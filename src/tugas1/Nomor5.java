@@ -15,7 +15,16 @@ import java.util.List;
  * @author Arif Fridasari
  */
 public class Nomor5 {
-     public static void main(String[] args) {
+
+    public static void main(String[] args) {
+        System.out.println("Auto Increment");
+        List<String> inc = increment(2, 10);
+        for (String string : inc) {
+            System.out.println(string + ", ");
+        }
+        
+        System.out.println("Auto Decrement");
+        
         List<String> dec = decrement(3, 15);
 //        System.out.println(dec);
         for (String string : dec) {
@@ -23,7 +32,33 @@ public class Nomor5 {
         }
     }
 
-    private static List<String> decrement(int a, int b) {
+    /**
+     * Auto increment dari nilai minimumA sampai dengan nilai maksimumB dengan
+     * menambahkan left padding "0" sebanyak digit dari maksimumB sehingga semua
+     * elemen increment memiliki length yang sama yaitu length dari maksimumB.
+     *
+     * @param minimumA Batas bawah nilai. Merupakan nilai terkecil dari list
+     * increment
+     * @param maksimumB Batas atas nilai. Merupakan nilai terbesar dari list
+     * increment
+     * @return Pengembalian berupa list nilai increment dari minimumA sampai
+     * maksimumB
+     */
+    // Sindi
+    public static List<String> increment(int minimumA, int maksimumB) {
+        List<String> inc = new ArrayList<>();
+        for (int i = minimumA; i <= maksimumB; i++) {
+            String output = Integer.toString(i);
+            while (output.length() < Integer.toString(maksimumB).length()) {
+                output = "0" + output;
+            }
+            inc.add(output);
+        }
+        return inc;
+    }
+    
+    //Arif
+    public static List<String> decrement(int a, int b) {
         List<String> dec = new ArrayList<>();
         for (int i = b; i >= a; i--) {
             String y = Integer.toString(i);
@@ -35,3 +70,4 @@ public class Nomor5 {
         return dec;
     }
 }
+//nkjn
