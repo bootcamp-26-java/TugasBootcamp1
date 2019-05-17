@@ -30,7 +30,9 @@ public class Nomor5Test {
      * Test of increment method, of class Nomor5.
      */
     
-    //Sindi
+    /**
+     * Sindi
+     */
     @Test
     public void testIncrement() {
         assertEquals(Arrays.asList("02","03","04","05","06","07","08","09","10"),Nomor5.increment(2, 10));
