@@ -18,6 +18,7 @@ public class Nomor1Test {
     }
 
     /**
+     * @Arif Fridasari
      * Test of kombinasi method, of class Nomor1.
      */
     
@@ -83,8 +84,5 @@ public class Nomor1Test {
     /**
      * Test of main method, of class Nomor1.
      */
-    @Test
-    public void testMain() {
-    }
-
+   
 }
