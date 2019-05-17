@@ -29,15 +29,7 @@ public class Nomor4 {
         return result; //nilai kembalian
 
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
->>>>>>> origin/master
-        
-        
-    /**
+/**
  *
  * @author erik
  */
@@ -73,7 +65,7 @@ public class Nomor4 {
 //        
 //        System.out.println(generateRandom(10));    
     
->>>>>>> origin/master
+
     public static void main(String[] args) {
         int[][] result = Pecah(377000);
         for (int i = 0; i < 10; i++) {
