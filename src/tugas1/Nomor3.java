@@ -68,6 +68,9 @@ public class Nomor3 {
      * @return Pengembalian berupa list dari deret Fibonacci dari 0 sampai nilai 
      * yang dekat dengan nilaimaksimal
      */
+    /*
+    Sindi
+    */
     public static List<Integer> fibo(int nilaimaksimal) {
         List<Integer> fibonacciList = new ArrayList<>();
 

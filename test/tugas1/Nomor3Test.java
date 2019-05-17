@@ -29,6 +29,10 @@ public class Nomor3Test {
          assertEquals(Arrays.asList(2, 3, 5, 7), Nomor3.prima(10));
     }
     
+    
+    /*
+    Sindi
+    */
     @Test
     public void testFibo() {
         assertEquals(Arrays.asList(0, 1, 1, 2, 3, 5, 8),Nomor3.fibo(10));

@@ -10,10 +10,7 @@ import java.util.List;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author HP
- */
+
 public class Nomor5Test {
     
     public Nomor5Test() {
@@ -31,7 +28,7 @@ public class Nomor5Test {
      */
     
     /**
-     * Sindi
+     * Sindi YW
      */
     @Test
     public void testIncrement() {

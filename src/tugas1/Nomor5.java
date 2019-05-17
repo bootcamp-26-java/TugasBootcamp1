@@ -24,7 +24,7 @@ public class Nomor5 {
     }
 
     /**
-     * Sindi
+     * Sindi YW
      */
     /**
      * Auto increment dari nilai minimumA sampai dengan nilai maksimumB dengan
